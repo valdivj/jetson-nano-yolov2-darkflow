@@ -65,14 +65,14 @@ There is a bin file and CFG file.
 Put those in you darkflow folder
 
 Also move labels.txt to the darkflow folder.
-This is the list that matches the yolov2-tiny-voc.cfg file that 
+This is the list that matches the 'yolov2-tiny-voc.cfg' file that 
 is provided in this repo.
 
-To get tiny yolov2 to run go to the :darkflow\darkflow\utils folder
-and open loader.py and go to about line 122 and set self.offset to 20.
+To get tiny yolov2 to run go to the :'darkflow\darkflow\utils' folder
+and open 'loader.py' and go to about line 122 and set self.offset to 20.
 'self.offset = 20'
 
 yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
-yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech:
+yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
  
