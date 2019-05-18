@@ -53,9 +53,13 @@ https://towardsdatascience.com/yolov2-object-detection-using-darkflow-83db6aa5cf
 
 
 $ pip install Cython
+
 $ git clone https://github.com/thtrieu/darkflow.git
+
 $ cd darkflow
+
 $ python3 setup.py build_ext --inplace
+
 $ pip install .
 
 
