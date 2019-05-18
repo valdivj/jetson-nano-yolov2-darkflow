@@ -64,6 +64,10 @@ I will aslo have some in my repo you can use.
 There is a bin file and CFG file.
 Put those in you darkflow folder
 
+Also move label.txt to the darkflow folder.
+This is the list that matches the yolov2-tiny-voc.cfg file that 
+is provided in this repo.
+
 To get tiny yolov2 to run go to the :darkflow\darkflow\utils folder
 and open loader.py and go to about line 122 and set self.offset to 20.
 'self.offset = 20'
