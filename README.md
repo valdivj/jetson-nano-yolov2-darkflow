@@ -64,7 +64,7 @@ I will aslo have some in my repo you can use.
 There is a bin file and CFG file.
 Put those in you darkflow folder
 
-Also move label.txt to the darkflow folder.
+Also move labels.txt to the darkflow folder.
 This is the list that matches the yolov2-tiny-voc.cfg file that 
 is provided in this repo.
 
