@@ -46,8 +46,9 @@ If you havent got in on Adrian's kickstarter campiagn you should.
 He is the best 'explainer' I have come across.
 
 6. OK now to install darkflow. Stay with me we are almost done.
-go to this website for instructions tio install Darkflow:
+go to this website for instructions to install Darkflow:
 https://towardsdatascience.com/yolov2-object-detection-using-darkflow-83db6aa5cf5f
+
 
 $ pip install Cython
 $ git clone https://github.com/thtrieu/darkflow.git
@@ -55,12 +56,17 @@ $ cd darkflow
 $ python3 setup.py build_ext --inplace
 $ pip install .
 
+
 Dont forget to download the weights and CFG file.
 I will aslo have some in my repo you can use.
 
 7. Now download the files from this repo.
 There is a bin file and CFG file.
 Put those in you darkflow folder
+
+To get tiny yolov2 to run go to the :darkflow\darkflow\utils folder
+and open loader.py and go to about line 122 and set self.offset to 20.
+'self.offset = 20'
 
 yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
