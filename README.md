@@ -1,5 +1,6 @@
 # jetson-nano-yolov2-darkflow
 run yolov2 darkflow on jetson nano
+Link to video:https://youtu.be/usdKZIZWSaE
 
 These are the steps I used to get yolov2 darkflow to run on my jetson nano.
 It runs about 4 fps.
