@@ -75,8 +75,9 @@ This is the list that matches the 'yolov2-tiny-voc.cfg' file that
 is provided in this repo.
 
 To get tiny yolov2 to run go to the :'darkflow\darkflow\utils' folder
-and open 'loader.py' and go to about line 122 and set self.offset to 20.
-'self.offset = 20'
+and open 'loader.py' and go to about line 122 and set self.offset to 16.
+yolov2-voc:'self.offset = 20'
+yolov2-tiny-voc:'self.offset = 16'
 
 yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
