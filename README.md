@@ -84,4 +84,43 @@ yolov2-tiny-voc:'self.offset = 16'
 yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
 yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
- 
+
+# jetson-nano-yolov2-darkflow-webserver
+
+I have added some programs that will let you stream the yolo model or just a webcam images to a web browser from the nano
+If you have followed the instructions above you should be able to run this.
+
+1.Make sure you are in the enviroment you created and install flask
+:pip install flask. 
+
+2.Take these items from this repo and put them in youre darkflow folder you created earlier.
+
+:app.py
+
+:base_camera.py
+
+:camera_opencv.py #yolo webcam
+
+:camera_opencv2.py #just webcam
+
+:Templates folder
+
+To start run this command in youre enviroment from inside the  darkflow folder you created earlier.
+
+$ qunicorn --threads 5 --workers 1 --bind 0.0.0.0:5000 app:app
+
+Then open up a web browser and put in the I.P. address of the nano followed by :5000
+
+To change between yolo webcam and just webcam change camera_opencv.py to camera_opencv2.py
+and rerun 
+
+$ qunicorn --threads 5 --workers 1 --bind 0.0.0.0:5000 app:app
+
+
+
+
+
+
+
+
+
