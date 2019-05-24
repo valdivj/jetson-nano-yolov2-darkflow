@@ -87,6 +87,8 @@ yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
 
 # jetson-nano-yolov2-darkflow-webserver
 
+link to video:https://youtu.be/DG5Sc1Iy-Gs
+
 I have added some programs that will let you stream the yolo model or just a webcam images to a web browser from the nano.
 If you have followed the instructions above you should be able to run this.
 
