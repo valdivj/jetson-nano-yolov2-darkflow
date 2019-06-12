@@ -43,6 +43,7 @@ $ wget -O opencv.zip https://github.com/opencv/opencv/archive/4.1.0.zip
 $ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.1.0.zip
 
 
+
 I got a bit confused when I got to step 5 in this tutorial.
 You have to pay attention to the wording.
 
