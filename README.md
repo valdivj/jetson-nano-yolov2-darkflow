@@ -34,6 +34,14 @@ We will use the one we made in the previouse tutorial.
 I also skipped the beginning were everything is updated.
 I also ran this tutorial in the envoriment that I created in the last tutorial.
 
+When you get to the part where you download opencv make sure you get the latest version.
+There is a bug in  Ver 4.0 that was repaired
+Use this:
+
+$ wget -O opencv.zip https://github.com/opencv/opencv/archive/4.1.0.zip
+$ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.1.0.zip
+
+
 I got a bit confused when I got to step 5 in this tutorial.
 You have to pay attention to the wording.
 
