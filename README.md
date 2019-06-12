@@ -39,6 +39,7 @@ There is a bug in  Ver 4.0 that was repaired
 Use this:
 
 $ wget -O opencv.zip https://github.com/opencv/opencv/archive/4.1.0.zip
+
 $ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.1.0.zip
 
 
