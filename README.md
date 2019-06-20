@@ -34,6 +34,17 @@ We will use the one we made in the previouse tutorial.
 I also skipped the beginning were everything is updated.
 I also ran this tutorial in the envoriment that I created in the last tutorial.
 
+When you get to the part where you download opencv make sure you get the latest version.
+There is a bug in  Ver 4.0 that was repaired
+Use this:
+
+$ wget -O opencv.zip https://github.com/opencv/opencv/archive/4.1.0.zip
+
+$ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.1.0.zip
+
+
+
+
 I got a bit confused when I got to step 5 in this tutorial.
 You have to pay attention to the wording.
 
@@ -84,4 +95,45 @@ yolov2-tiny-voc:'self.offset = 16'
 yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
 yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
- 
+
+# jetson-nano-yolov2-darkflow-webserver
+
+link to video:https://youtu.be/DG5Sc1Iy-Gs
+
+I have added some programs that will let you stream the yolo model or just a webcam images to a web browser from the nano.
+If you have followed the instructions above you should be able to run this.
+
+1.Make sure you are in the enviroment you created and install flask
+:pip install flask. 
+
+2.Take these items from this repo and put them in youre darkflow folder you created earlier.
+
+:app.py
+
+:base_camera.py
+
+:camera_opencv.py #yolo webcam
+
+:camera_opencv2.py #just webcam
+
+:Templates folder
+
+To start run this command in youre enviroment from inside the  darkflow folder you created earlier.
+
+$ qunicorn --threads 5 --workers 1 --bind 0.0.0.0:5000 app:app
+
+Then open up a web browser and put in the I.P. address of the nano followed by :5000
+
+To change between yolo webcam and just webcam change camera_opencv.py to camera_opencv2.py
+and rerun 
+
+$ qunicorn --threads 5 --workers 1 --bind 0.0.0.0:5000 app:app
+
+
+
+
+
+
+
+
+
