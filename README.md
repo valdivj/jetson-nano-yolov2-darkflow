@@ -229,13 +229,14 @@ and put in:
 
 13.to test install run :$python selective_stream.py
 
-14.Take 'nano_Kinect.py' from this repo and put it in youre darkflow folder you created earlier.
 
-# To run nano_Kinect.py
+# To run nano_kinect.py
 
-15.$ cd darkflow
+1.Take 'nano_Kinect.py' from this repo and put it in youre darkflow folder you created earlier.
 
-16 $ python nano_Kinect.py
+2.$ cd darkflow
+
+3.$ python nano_kinect.py
 
 
 
