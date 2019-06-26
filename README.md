@@ -105,9 +105,9 @@ yolov2-voc:'self.offset = 20'
 
 yolov2-tiny-voc:'self.offset = 16'
 
-yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
+8.$ python yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
-yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
+9.$ python yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
 
 # jetson-nano-yolov2-darkflow-webserver
 
