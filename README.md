@@ -292,7 +292,9 @@ Communiication to a PLC is a must for those enviroments.
 
 4. Change the I.P. address in the 'yolov2_PLC.py' program to the address of youre CLX 5000 processor.
 
-5. There is no comms checking in this program so if you run this and it hangs up make sure you can ping the CLX5000 processor.
+5.$ python yolov2_PLC.py
+
+6. There is no comms checking in this program so if you run this and it hangs up make sure you can ping the CLX5000 processor.
 
 
 
