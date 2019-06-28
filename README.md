@@ -111,7 +111,7 @@ yolov2-tiny-voc:'self.offset = 16'
 
 9.$ python yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
 
-#2.jetson-nano-yolov2-darkflow-webserver
+# 2.jetson-nano-yolov2-darkflow-webserver
 
 link to video:https://youtu.be/DG5Sc1Iy-Gs
 
@@ -145,7 +145,7 @@ and rerun
 $ qunicorn --threads 5 --workers 1 --bind 0.0.0.0:5000 app:app
 
 
-#3.Jetson_nano_YOLO_Kinect2_Depth
+# 3.Jetson_nano_YOLO_Kinect2_Depth
 
 Take 'nano_kinect.py' from this repo and put it in youre darkflow folder you created earlier.
 You will need at least 5v at 4 amps to run this program.
