@@ -11,7 +11,7 @@ Items in this repository
 
 5.Instructions on how to record and playback video on Jetson nano
 
-6. Instructions to how to send Data from the Jetson Nano to a Allen Bradley CLX5000
+6.Instructions to how to send Data from the Jetson Nano to a Allen Bradley CLX5000
 
 
 # 1.jetson-nano-yolov2-darkflow
