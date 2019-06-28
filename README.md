@@ -11,8 +11,10 @@ Items in this repository
 
 5.Instructions on how to record and playback video on Jetson nano
 
+6. Instructions to how to send Data from the Jetson Nano to a Allen Bradley CLX5000
 
-# jetson-nano-yolov2-darkflow
+
+# 1.jetson-nano-yolov2-darkflow
 
 Link to video:https://youtu.be/usdKZIZWSaE
 
@@ -109,7 +111,7 @@ yolov2-tiny-voc:'self.offset = 16'
 
 9.$ python yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
 
-# jetson-nano-yolov2-darkflow-webserver
+#2.jetson-nano-yolov2-darkflow-webserver
 
 link to video:https://youtu.be/DG5Sc1Iy-Gs
 
@@ -143,7 +145,7 @@ and rerun
 $ qunicorn --threads 5 --workers 1 --bind 0.0.0.0:5000 app:app
 
 
-# Jetson_nano_YOLO_Kinect2_Depth
+#3.Jetson_nano_YOLO_Kinect2_Depth
 
 Take 'nano_kinect.py' from this repo and put it in youre darkflow folder you created earlier.
 You will need at least 5v at 4 amps to run this program.
@@ -243,7 +245,7 @@ and put in:
 13.to test install run :$python selective_stream.py
 
 
-# To run nano_kinect.py
+# 4. To run nano_kinect.py
 
 1.Take 'nano_Kinect.py' from this repo and put it in youre darkflow folder you created earlier.
 
@@ -252,7 +254,7 @@ and put in:
 3.$ python nano_kinect.py
 
 
-# To run record and playback function on jetson nano
+# 5. To run record and playback function on jetson nano
 
 1.Go ahead and move 'webcam_YOLO_Player.py' & 'webcam_record.py' from this repo to the darkflow folder you created eairler.
 
@@ -266,7 +268,31 @@ and put in:
 
 6.$ python webcam_YOLO_Player.py : to playback recorded video in YOLO model
 
+# 6. To send data from Nano to Allen Bradley CLX5000 PLC
+Now this one is really only for people that will be using there Nano in a Industrial or manufactoring emviroment.
+Communiication to a PLC is a must for those enviroments.
 
+1. Move these files from this repo to the darkflow folder you created earlier.
+
+:cli.py
+
+:eip.py
+
+:lgxDevice.py
+
+:yolov2_PLC.py
+
+2. $ pip install pylogic
+
+3. You will need Allen Bradley RSlogix 5000 software to complete the folowing task. Using RSLOGIX software create 2 Tags in processor.
+
+:Nano_YOLO_Label :as a string Tag
+
+:Nano_YOLO_Confidence :as a string Tag
+
+4. Change the I.P. address in the 'yolov2_PLC.py' program to the address of youre CLX 5000 processor.
+
+5. There is no comms checking in this program so if you run this and it hangs up make sure you can ping the CLX5000 processor.
 
 
 
