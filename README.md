@@ -1,5 +1,18 @@
+# jetson-nano-stuff
+Items in this repository
+
+1.Instructions on how to setup and run yoloV2 darkflow on jetson nano 
+
+2.Instructions on how to setup and run yoloV2 darkflow as webserver on Jetson nano
+
+3.Instructions on how to setup and run Kinect2 on Jetson nano
+
+4.Instructions on how to run YoloV2 Model using the Kinect2
+
+5.Instructions on how to record and playback video on Jetson nano
+
+
 # jetson-nano-yolov2-darkflow
-run yolov2 darkflow on jetson nano
 
 Link to video:https://youtu.be/usdKZIZWSaE
 
@@ -92,9 +105,9 @@ yolov2-voc:'self.offset = 20'
 
 yolov2-tiny-voc:'self.offset = 16'
 
-yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
+8.$ python yolov2_od_webcam _csi.py : this runs yolov2 on a rasberry pi camera
 
-yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
+9.$ python yolov2_od_webcam.py : this runs yolov2 on a webcam:logitech webcam
 
 # jetson-nano-yolov2-darkflow-webserver
 
@@ -237,6 +250,25 @@ and put in:
 2.$ cd darkflow
 
 3.$ python nano_kinect.py
+
+
+# To run record and playback function on jetson nano
+
+1.Go ahead and move 'webcam_YOLO_Player.py' & 'webcam_record.py' from this repo to the darkflow folder you created eairler.
+
+2.Change the paths to your videos folder in both programs.
+
+3.Make sure youre webcam is pluged in and get in youre virtual enviroment.
+
+4.$ cd darkflow
+
+5.$ python webcam_record.py :to record video.
+
+6.$ python webcam_YOLO_Player.py : to playback recorded video in YOLO model
+
+
+
+
 
 
 
