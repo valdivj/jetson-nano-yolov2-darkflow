@@ -5,9 +5,11 @@ import time
 import tensorflow as tf
 from eip import PLC
 
-#Uncoment next 2 lines for PLC support
+#There is no comms error checking in this program
+#so if it cant find PLC it will hang up.
 #I am pushing data to a PLC running CLX 5000 software
 test = PLC()
+# Set the I.P to youre CLX 5000 rack
 test.IPAddress = "172.16.2.161"
 
 config = tf.ConfigProto(log_device_placement=True)
@@ -43,7 +45,6 @@ while True:
             frame = cv2.putText(
                 frame, text, tl, cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 0), 2)
         cv2.imshow('frame', frame)
-      # uncomment next 2 lines for PLC support
       # Make a String tag(Nano_YOLO_label) and a String tag(Nano_YOLO_confidence) in your CLX 5000 processor
         ex: test.Write("Nano_YOLO_label", label)
         ex: test.Write("Nano_YOLO_confidence", textCon)
