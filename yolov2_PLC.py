@@ -44,7 +44,7 @@ while True:
                 frame, text, tl, cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 0), 2)
         cv2.imshow('frame', frame)
       # uncomment next 2 lines for PLC support
-      # Make a String tag(YOLO_Sting) and a INT tag( YOLO_INT) in your CLX 5000 processor
+      # Make a String tag(Nano_YOLO_label) and a String tag(Nano_YOLO_confidence) in your CLX 5000 processor
         ex: test.Write("Nano_YOLO_label", label)
         ex: test.Write("Nano_YOLO_confidence", textCon)
         print('FPS {:.1f}'.format(1 / (time.time() - stime)))
